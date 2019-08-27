@@ -6,8 +6,12 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 
+import { NgxQRCodeModule } from 'ngx-qrcode2';
+import {BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
+
 @NgModule({
   imports: [
+    NgxQRCodeModule,
     CommonModule,
     FormsModule,
     IonicModule,
@@ -20,4 +24,6 @@ import { HomePage } from './home.page';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+
+}
